@@ -55,11 +55,47 @@ function generateMarkdown(data) {
   readmeContents= `# ${data.title}
   ## Description: ${data.description}
   ## Table of Contents
-  ## Installation ${data.installation}
-  ## Usage ${data.usage}
-  ## Contributing ${data.contributing}
-  ## Tests ${data.tests}
-  ##Questions:If you have 
+  * [Installation](#installation)
+
+  * [Usage](#usage)
+
+  * [Contributing](#contributing)
+
+  * [Tests](#tests)
+
+  * [Questions](#questions)
+
+  * [License] (#license)
+
+  ## Installation 
+  
+  To install the necessary dependancies, run the following command:
+
+  \`\`\`
+  ${data.installation}
+  \`\`\`
+
+  ## Usage 
+  
+  ${data.usage}
+
+  ## Contributing 
+  
+  ${data.contributing}
+
+  ## Tests 
+  
+  Run tests using the below command:
+
+  \`\`\`
+  ${data.tests}
+  \`\`\`
+
+  ## Questions
+  
+  If you have any questions about the repo, contact me directly at ${data.email}.
+  You can find more of my work at [${data.github}](https://github.com/${data.github}/).
+  
   ## License
   ${renderLicenseSection(data.license)}
 `;
